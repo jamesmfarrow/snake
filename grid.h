@@ -5,7 +5,10 @@
 class Grid
 {
 private:
-    constexpr int length = 500;
+    //size of the grid play area
+    const int length{500};
+    const int breadth{500};
+
 public:
     Grid();
 };
