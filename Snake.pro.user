@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.12.2, 2020-09-29T10:12:59. -->
+=======
+<!-- Written by QtCreator 4.12.2, 2020-09-28T18:29:09. -->
+>>>>>>> 008a278153beca0e8f62f83d5f3bad9f6909ec85
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -61,7 +65,11 @@
    <valuemap type="QVariantMap" key="ClangTools">
     <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
     <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
+<<<<<<< HEAD
     <value type="int" key="ClangTools.ParallelJobs">2</value>
+=======
+    <value type="int" key="ClangTools.ParallelJobs">4</value>
+>>>>>>> 008a278153beca0e8f62f83d5f3bad9f6909ec85
     <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
     <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
@@ -306,8 +314,13 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/james/Downloads/QT Stuff/snake/Snake.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/james/Downloads/QT Stuff/snake/Snake.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/james/Downloads/QT projects/Snake/Snake.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/james/Downloads/QT projects/Snake/Snake.pro</value>
+>>>>>>> 008a278153beca0e8f62f83d5f3bad9f6909ec85
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -319,7 +332,11 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/james/Downloads/QT Stuff/build-Snake-Desktop_Qt_5_12_9_clang_64bit-Debug/Snake.app/Contents/MacOS</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/james/Downloads/QT projects/build-Snake-Desktop_x86_darwin_generic_mach_o_64bit-Debug/Snake.app/Contents/MacOS</value>
+>>>>>>> 008a278153beca0e8f62f83d5f3bad9f6909ec85
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
