@@ -8,6 +8,7 @@ private:
     //size of the grid play area
     const int length{500};
     const int breadth{500};
+    int number_of_pills{50};
 
 public:
     Grid();
