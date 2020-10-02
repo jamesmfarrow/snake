@@ -16,7 +16,7 @@ public:
 
     int grow() {
         std::random_device dev;
-        std::uniform_int_distribution<int> dist(0, 5);
+        std::uniform_int_distribution<int> dist(1, 5);
         return dist(dev);
     }
 
