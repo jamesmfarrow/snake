@@ -24,9 +24,11 @@ SOURCES += \
     snake.cpp
 
 HEADERS += \
+    GridSize.h \
     coordinate.h \
     grid.h \
     mainwindow.h \
+    obstacles.h \
     pill.h \
     snake.h
 

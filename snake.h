@@ -27,7 +27,7 @@ public:
     }
 
     void grow(int growth) {
-        int size = body.size();
+        //int size = body.size();
         coordinate last = body.back();
         for(int i{}; i < growth; i++) {
             body.push_back(last);
@@ -58,7 +58,15 @@ public:
     }
 
     // change direction
+
+
     // self collision test
+    bool self_collision() {
+        for(unsigned long int i{1}; i < body.size() - 1; i++) {
+            if(body[0] == body[i]) return true;
+        }
+        return false;
+    }
 
 };
 
