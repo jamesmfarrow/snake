@@ -58,6 +58,12 @@ public:
     }
 
     // change direction
+    // first need to know which direction travelling
+    // 2 choices left/right
+    // north + left = west, north + right = east
+    // east + left = north, east + right = south
+    // south + left = east, south + right = west
+    // west + left = south, west + right = north
 
 
     // self collision test
