@@ -12,7 +12,8 @@ class snake
 private:
     //coordinate head;
     std::vector<coordinate> body;
-    move direction;
+    move direction{move::north};
+    turn change{turn::left};
     //int length;
 
 public:
@@ -64,6 +65,36 @@ public:
     // east + left = north, east + right = south
     // south + left = east, south + right = west
     // west + left = south, west + right = north
+
+    void change_direction() {
+        if(direction == move::north && change == turn::left) {
+            direction = move::west;
+        }
+        else if(direction == move::north && change == turn::right) {
+            direction = move::east;
+        }
+
+        if(direction == move::east && change == turn::left) {
+            direction = move::north;
+        }
+        else if(direction == move::east && change == turn::right) {
+            direction = move::south;
+        }
+
+        if(direction == move::south && change == turn::left) {
+            direction = move::east;
+        }
+        else if(direction == move::south && change == turn::right) {
+            direction = move::west;
+        }
+
+        if(direction == move::west && change == turn::left) {
+            direction = move::south;
+        }
+        else if(direction == move::west && change == turn::right) {
+            direction = move::north;
+        }
+    }
 
 
     // self collision test

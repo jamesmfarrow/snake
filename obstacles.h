@@ -18,7 +18,11 @@ private:
     coordinate position;
     int obstacles{25};
     std::vector<coordinate> obstacle_pos;
+
+    //vector to store pills, check obstacles against
     std::vector<coordinate> pillpostions;
+
+    //create a pill object and use it to get all coordinates of the allocated pills
     pill positioned_pills;
     GridSize grid;
 public:
@@ -30,7 +34,7 @@ public:
     }
 
     //method to fill vector pill positions, to make sure obstacles do not duplicate pills or each other
-    void get_pill_pos(std::vector<coordinate> vec) {
+    void get_pill_pos(std::vector<coordinate>& vec) {
         pillpostions = vec;
     }
 

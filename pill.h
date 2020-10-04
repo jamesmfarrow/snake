@@ -35,7 +35,7 @@ public:
         }
     }
 
-    std::vector<coordinate> get_Vec() {
+    std::vector<coordinate>& get_Vec() {
         return pill_pos;
     }
 
