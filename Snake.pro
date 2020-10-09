@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     coordinate.cpp \
+    drawwidget.cpp \
     grid.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -24,12 +25,10 @@ SOURCES += \
     snake.cpp
 
 HEADERS += \
-    GridSize.h \
     coordinate.h \
+    drawwidget.h \
     grid.h \
     mainwindow.h \
-    obstacles.h \
-    pill.h \
     snake.h
 
 FORMS += \

@@ -66,34 +66,22 @@ public:
     // south + left = east, south + right = west
     // west + left = south, west + right = north
 
-    void change_direction() {
-        if(direction == move::north && change == turn::left) {
-            direction = move::west;
-        }
-        else if(direction == move::north && change == turn::right) {
-            direction = move::east;
-        }
+    void change_direction(turn change) {
+        switch(direction) {
+            case move::north:
+                direction=(change==turn::left) ? move::west : move::east;
+                break;
+            case move::east:
+                direction=(change==turn::left) ? move::north : move::south;
+                break;
+            case move::south:
+                direction=(change==turn::left) ? move::east : move::west;
+                break;
+            case move::west:
+                direction=(change==turn::left) ? move::south : move::north;
+            break;
+        }//end switch
 
-        if(direction == move::east && change == turn::left) {
-            direction = move::north;
-        }
-        else if(direction == move::east && change == turn::right) {
-            direction = move::south;
-        }
-
-        if(direction == move::south && change == turn::left) {
-            direction = move::east;
-        }
-        else if(direction == move::south && change == turn::right) {
-            direction = move::west;
-        }
-
-        if(direction == move::west && change == turn::left) {
-            direction = move::south;
-        }
-        else if(direction == move::west && change == turn::right) {
-            direction = move::north;
-        }
     }
 
 
